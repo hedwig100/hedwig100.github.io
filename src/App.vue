@@ -7,16 +7,9 @@
       <p>I'm a student.</p>
     </div>
   </div>
-  <slide-table
-    :slides="projects"
-    :title="'My Projects'"
-    :hasLink="true"
-  ></slide-table>
-  <slide-table
-    :slides="experiences"
-    :title="'Experiences'"
-    :hasLink="false"
-  ></slide-table>
+  <slide-table :slides="projects" :title="'My Projects'"></slide-table>
+  <slide-table :slides="experiences" :title="'Experiences'"></slide-table>
+  <slide-table :slides="others" :title="'Others'"></slide-table>
   <my-footer></my-footer>
 </template>
 
@@ -24,7 +17,7 @@
 import MyHeader from "./components/MyHeader.vue";
 import MyFooter from "./components/MyFooter.vue";
 import SlideTable from "./components/SlideTable.vue";
-import { projects, experiences } from "./data.js";
+import { projects, experiences, others } from "./data.js";
 
 export default {
   name: "App",
@@ -37,6 +30,7 @@ export default {
     return {
       projects,
       experiences,
+      others,
     };
   },
 };

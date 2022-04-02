@@ -19,7 +19,7 @@
 <style scoped>
 #global_footer {
   border-top: 1px solid #cccccc;
-  margin: 0;
+  margin-top: 50px;
   padding: 10px;
   width: 100%;
 }

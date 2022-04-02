@@ -2,20 +2,29 @@ const projects = [
     {
         id: 0,
         name: "hcc",
-        description: "C Compiler.",
+        description: "Hcc is a toy C Compiler. Hcc can compile itself though only subset of C is supported. I learned the basics of \
+        parsing(syntax analysis) and how C language works",
         link: "https://github.com/hedwig100/hcc"
     },
     {
         id: 1,
         name: "PRML",
-        description: "Machine Learning Algorithm in Pattern Recognition and Machine Learning written in Python.",
+        description: "Various machine learning algorithms in 「Pattern Recognition and Machine Learning」are implemented \
+        without using machine learning packages such as scikit-learn. This is written in Python.",
         link: "https://github.com/hedwig100/PRML"
     },
     {
         id: 2,
         name: "go-network",
-        description: "Network implementation (like IP,TCP) written in Go.",
+        description: "Implementation of protocol stack (ex. IP,ICMP,UDP,TCP) written in Go. I learned how \
+        low-level protocol stack works that is always hidden by OS.",
         link: "https://github.com/hedwig100/go-network"
+    },
+    {
+        id: 3,
+        name: "portfolio",
+        description: "This portfolio is written in Vue.js",
+        link: "https://github.com/hedwig100/portfolio"
     }
 ]
 
@@ -28,4 +37,18 @@ const experiences = [
     }
 ]
 
-export { projects, experiences };
+const others = [
+    {
+        id: 0,
+        name: "Atcoder",
+        description: "Atcoder is a programming contest site. Highest rating is 1761 (November 15,2020). I haven't participated recently...",
+        link: "https://atcoder.jp/users/hedwig?lang=en"
+    },
+    {
+        id: 1,
+        name: "TOEFL iBT",
+        description: "My best score is 94 (September 11,2021)"
+    }
+]
+
+export { projects, experiences, others };
