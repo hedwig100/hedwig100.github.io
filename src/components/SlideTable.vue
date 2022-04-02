@@ -1,11 +1,19 @@
 <template>
   <div id="whole">
     <h2>{{ title }}</h2>
-    <div id="list">
+    <!--has link-->
+    <div id="list" v-if="hasLink">
       <a v-for="slide in slides" :key="slide.id" id="slide" :href="slide.link">
         <h3>{{ slide.name }}</h3>
         <p>{{ slide.description }}</p>
       </a>
+    </div>
+    <!--doesn't have link-->
+    <div id="list" v-if="!hasLink">
+      <div v-for="slide in slides" :key="slide.id" id="slide">
+        <h3>{{ slide.name }}</h3>
+        <p>{{ slide.description }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -15,13 +23,14 @@ export default {
   props: {
     slides: Array,
     title: String,
+    hasLink: Boolean,
   },
 };
 </script>
 
 <style scoped>
 #whole {
-  padding: 40px;
+  padding-top: 40px;
 }
 #list {
   display: flex;
@@ -30,15 +39,15 @@ export default {
 #slide {
   display: block;
   width: 400px;
-  height: 300px;
+  height: 250px;
   margin: 30px;
   border: 3px double #cccccc;
   text-decoration: none;
 }
-#slide:hover {
+#list a:hover {
   opacity: 0.5;
 }
-#slide:visited {
+#list a:visited {
   color: black;
 }
 #slide p {

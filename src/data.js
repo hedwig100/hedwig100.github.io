@@ -19,4 +19,13 @@ const projects = [
     }
 ]
 
-export default projects;
+const experiences = [
+    {
+        id: 0,
+        name: "LINE Corp(short-term intern)",
+        description: "September 2021,development of a chat application that can do speech recognition. My work was to train a \
+        machine learning model."
+    }
+]
+
+export { projects, experiences };

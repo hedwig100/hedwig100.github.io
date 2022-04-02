@@ -1,5 +1,5 @@
 <template>
-  <div id="global_header">
+  <div id="global_footer">
     <nav>
       <ul>
         <li>
@@ -17,10 +17,10 @@
 </template>
 
 <style scoped>
-#global_header {
-  border-bottom: 1px solid #cccccc;
+#global_footer {
+  border-top: 1px solid #cccccc;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 100%;
 }
 nav ul {

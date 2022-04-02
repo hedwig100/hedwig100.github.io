@@ -20,7 +20,7 @@
 #global_header {
   border-bottom: 1px solid #cccccc;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 100%;
 }
 nav ul {
