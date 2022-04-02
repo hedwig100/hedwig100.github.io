@@ -51,4 +51,9 @@ const others = [
     }
 ]
 
-export { projects, experiences, others };
+const intro = {
+    "name": "hedwig",
+    "detail": "I am a university student in japan. My interest is computer science and mathmatics. I like reading books and writing a code."
+}
+
+export { projects, experiences, others, intro };

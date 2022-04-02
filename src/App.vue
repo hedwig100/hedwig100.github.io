@@ -3,8 +3,8 @@
   <div id="intro">
     <img src="./assets/black.png" />
     <div id="prof">
-      <h2>hedwig</h2>
-      <p>I'm a student.</p>
+      <h2>{{ intro.name }}</h2>
+      <p>{{ intro.detail }}</p>
     </div>
   </div>
   <slide-table :slides="projects" :title="'My Projects'"></slide-table>
@@ -17,7 +17,7 @@
 import MyHeader from "./components/MyHeader.vue";
 import MyFooter from "./components/MyFooter.vue";
 import SlideTable from "./components/SlideTable.vue";
-import { projects, experiences, others } from "./data.js";
+import { projects, experiences, others, intro } from "./data.js";
 
 export default {
   name: "App",
@@ -31,6 +31,7 @@ export default {
       projects,
       experiences,
       others,
+      intro,
     };
   },
 };
@@ -62,6 +63,7 @@ export default {
 }
 #prof p {
   display: block;
+  font-size: 18px;
   margin: 20px;
 }
 </style>
