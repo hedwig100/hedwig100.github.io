@@ -22,9 +22,9 @@ const projects = [
     },
     {
         id: 3,
-        name: "portfolio",
-        description: "This portfolio is written in Vue.js",
-        link: "https://github.com/hedwig100/portfolio"
+        name: "resume",
+        description: "This resume is written in Vue.js",
+        link: "https://github.com/hedwig100/resume"
     }
 ]
 
