@@ -1,7 +1,7 @@
 <template>
   <my-header></my-header>
   <div id="intro">
-    <img src="./assets/black.png" />
+    <img src="./assets/face.png" />
     <div id="prof">
       <h2>{{ intro.name }}</h2>
       <p>{{ intro.detail }}</p>
