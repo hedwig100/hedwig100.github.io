@@ -22,9 +22,16 @@ const projects = [
     },
     {
         id: 3,
-        name: "portfolio",
-        description: "This portfolio is written in Vue.js",
-        link: "https://github.com/hedwig100/portfolio"
+        name: "resume",
+        description: "This resume is written in Vue.js",
+        link: "https://github.com/hedwig100/resume"
+    },
+    {
+        id: 4,
+        name: "bookmark",
+        description: "Bookmark is an app to keep track of reading. This is a Single Page Application. API server is written in Go and \
+        a front-end is written in Vue.js. This project is in progress.",
+        link: "https://github.com/hedwig100/bookmark"
     }
 ]
 
